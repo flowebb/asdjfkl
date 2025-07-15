@@ -1,0 +1,83 @@
+.fifth {
+    width: 100%;
+    height: 45vh;
+    background-image: url('../portfolio/images/fifth-image.webp');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.fifth > .contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6vh;
+    color: white;
+    position: absolute;
+    right: 10%;
+}
+.fifth > .contents > h1 {
+    font-size: 44px;
+
+    line-height: 1.2;
+}
+.fifth > .contents > h6 {
+    font-size: 17px;
+
+    line-height: 1.2;
+}
+.fifth > .contents > .links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.fifth > .contents > .links > button {
+    font-size: 15px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+
+    padding: 10px 45px;
+}
+.fifth > .contents > .links > button:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 1024px) {
+    .fifth {
+        height: 55vh;
+    }
+    .fifth > .contents {
+        align-items: center;
+        text-align: center;
+        margin: 40px;
+
+        position: static;
+    }
+
+    .fifth > .contents > h1 {
+        font-size: 30px;
+
+        line-height: 1.2;
+    }
+    .fifth > .contents > h6 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .fifth {
+        height: 55vh;
+    }
+    .fifth > .contents > .links {
+        flex-direction: column;
+    }
+    .fifth > .contents > .links > button {
+        padding: 10px 120px;
+
+        flex-direction: row;
+        text-align: center;
+    }
+}

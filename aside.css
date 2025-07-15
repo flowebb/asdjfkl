@@ -1,0 +1,24 @@
+aside > .contents {
+    width: 208px;
+    height: 340px;
+    position: fixed;
+    right: 150px;
+    z-index: 20;
+}
+aside > .contents > img {
+    width: 210px;
+    height: 100%;
+    object-fit: cover;
+}
+aside > .contents > i {
+    position: absolute;
+    top: 0px;
+    left: 220px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 760px) {
+    aside > .contents {
+        bottom: 50px;
+    }
+}
